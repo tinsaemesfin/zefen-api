@@ -1,0 +1,22 @@
+node_modules/
+npm-debug.log
+*.log
+.DS_Store
+
+# Environment variables
+.env
+
+# Build artifacts
+build/
+dist/
+
+# Editor files
+.idea
+.vscode
+
+# Test files
+/test
+/specs
+
+# Temporary files
+.sass-cache
