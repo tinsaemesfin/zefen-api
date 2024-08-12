@@ -1,22 +1,33 @@
 const mongoose = require('mongoose');
 
 const songSchema = new mongoose.Schema({
-    _id: mongoose.Schema.Types.ObjectId,  
-    
+    _id: {
+      type:mongoose.Schema.Types.ObjectId,
+      auto: true, 
+    }, 
+
   title: {
     type: String,
     required: true,
   },
-  artist: {
+  imgUrl:{
     type: String,
+    required: true,
+  },
+  
+  artist: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'Artist',
     required: true,
   },
   album: {
-    type: String,
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'Album',
     required: true,
   },
   genre: {
-    type: String,
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'Genre',
     required: true,
   },
 });

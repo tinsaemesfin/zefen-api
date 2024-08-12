@@ -1,0 +1,40 @@
+POST http://localhost:3000/artists
+Content-Type: application/json
+
+[
+  {
+    "title" : "Ethiopia",
+   "imgUrl" : "https://via.assets.so/album.png?id=1&q=95&w=360&h=360&fit=fill",
+    "artist" : "66b60ab2c5bedce176e7975b",
+    "genre" : "66b5d327e14eb3dae99edd3d",
+    "album" : "66b60ea05b3426552f3b96d9"
+     },
+     {
+    "title" : " Wolo",
+   "imgUrl" : "https://via.assets.so/album.png?id=2&q=95&w=360&h=360&fit=fill",
+    "artist" : "66b60ab2c5bedce176e7975e",
+    "genre" : "66b5d312e14eb3dae99edd37",
+    "album" : "66b60ea05b3426552f3b96da"
+     },
+    {
+    "title" : " PA PA PA",
+    "artist" : "66b5fedd6ae1a77f6dc8f9fa",
+   "imgUrl" : "https://via.assets.so/album.png?id=3&q=95&w=360&h=360&fit=fill",
+    "genre" : "66b5d0eb4fc3d9020862efc5",
+    "album" : "66b60ea05b3426552f3b96db"
+     },
+            {
+    "title" : " Gelemene",
+    "artist" : "66b5fedd6ae1a77f6dc8f9fa",
+   "imgUrl" : "https://via.assets.so/album.png?id=4&q=95&w=360&h=360&fit=fill",
+    "genre" : "66b5d0eb4fc3d9020862efc5",
+    "album" : "66b60ea05b3426552f3b96db"
+     },
+     {
+    "title" : " Akam Akam",
+    "artist" : "66b60ab2c5bedce176e7975c",
+   "imgUrl" : "https://via.assets.so/album.png?id=5&q=95&w=360&h=360&fit=fill",
+    "genre" : "66b5d318e14eb3dae99edd39",
+    "album" : "66b60ea05b3426552f3b96dc"
+     }        
+]

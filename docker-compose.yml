@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+  app:
+    image: node:18-alpine  # or whichever Node.js version you're using
+    working_dir: /usr/src/app
+    volumes:
+      - .:/usr/src/app  # Mount the current directory to the container
+    ports:
+      - "3000:3000"  # Map port 3000 on your machine to port 3000 in the container
+    command: npm start
+    depends_on:
+      - node_modules
+
+  node_modules:
+    image: node:14
+    command: npm install
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules
